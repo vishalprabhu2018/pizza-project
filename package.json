@@ -1,0 +1,32 @@
+{
+  "name": "pizza-project",
+  "version": "1.0.0",
+  "description": "This is a pizza website built on nodejs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalprabhu2018/pizza-project.git"
+  },
+  "keywords": [
+    "pizza-project",
+    "webApp",
+    "nodejsProject"
+  ],
+  "author": "Vishal Prabhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalprabhu2018/pizza-project/issues"
+  },
+  "homepage": "https://github.com/vishalprabhu2018/pizza-project#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
