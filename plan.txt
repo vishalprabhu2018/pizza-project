@@ -13,8 +13,8 @@
 [+] Create Cart page
     - order summary section
     - empty cart section
-[.] - move routes to routes files
-[.] - Create dedicated controllers
+[+] - move routes to routes files
+[+] - Create dedicated controllers
 [.] Add to cart functionality
     [.] Fetch all pizzas from db and show on home page
     [.] Create menu model and put dummy Data
