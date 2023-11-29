@@ -5,12 +5,12 @@
         - ejs express-ejs-layouts
     - Dev dependancies
         - nodemon
-[.] Create Express server - Create a server.js file
-[.] Install Laravel Mix
+[+] Create Express server - Create a server.js file
+[+] Install Laravel Mix
     - setup js and scss
-[.] Install tailwind css
-[.] Create Home page using Html and Css
-[.] Create Cart page
+[+] Install tailwind css
+[+] Create Home page using Html and Css
+[+] Create Cart page
     - order summary section
     - empty cart section
 [.] - move routes to routes files
