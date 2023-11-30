@@ -46,6 +46,12 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json());
 
+//Global MiddleWare
+app.use((req,res,next)=>{
+  res.locals.session=req.session;
+  next();
+})
+
 //set template engine
 app.use(expressLayout); 
 // app.use('views',path.join(__dirname,'./views'));

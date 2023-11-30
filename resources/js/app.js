@@ -1,10 +1,12 @@
 import axios from 'axios'
 
-let addToCart = document.querySelectorAll('.add-to-cart');
+const addToCart = document.querySelectorAll('.add-to-cart');
+const cartCounter=document.getElementById('cartCounter');
 
 function updateCart(pizza){
      axios.post('/update-cart',pizza).then(res=>{
         console.log(res)
+        cartCounter.innerText=res.data.totalQty;
      }).catch((error)=>{console.log(error)});
 }
 
