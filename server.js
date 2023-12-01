@@ -60,8 +60,10 @@ app.use(express.json());
 //Global MiddleWare
 app.use((req,res,next)=>{
   res.locals.session=req.session;
+  res.locals.user=req.user;
   next();
 })
+
 
 //set template engine
 app.use(expressLayout); 

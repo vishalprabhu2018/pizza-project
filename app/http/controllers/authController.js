@@ -71,10 +71,12 @@ function authController(){
             req.flash('error','Something went wrong'); 
             return res.redirect('/register')
           })
-
-
-
-          console.log(req.body)
+        },
+        logout(req,res){
+            req.logout((err)=> {
+                if (err) { return next(err); }
+                res.redirect('/login');
+            });
         }
     }
 }
