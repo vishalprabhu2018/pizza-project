@@ -7,7 +7,10 @@ const PORT=3000;
 const mongoose=require('mongoose');
 const session = require('express-session')
 const flash = require('express-flash')
-const MongoDbStore = require('connect-mongo')(session)
+const MongoDbStore = require('connect-mongo')(session);
+const passport = require('passport');
+
+
 
 
 
@@ -26,6 +29,8 @@ let mongoStore=new MongoDbStore({
     collection:'sessions',
     
   })
+
+
    
   //   Session Config
   app.use(session({
@@ -36,6 +41,12 @@ let mongoStore=new MongoDbStore({
     cookie:{maxAge:1000*60*60*24}      //24hr
   
   }))
+
+  // Passport config
+const passportInit = require('./app/config/passport')
+passportInit(passport)
+app.use(passport.initialize())
+app.use(passport.session())
 
   
 
