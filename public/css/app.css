@@ -311,3 +311,7 @@ section.login a:hover {
   padding-left: 8px !important;
   background-color: #FE5F1E !important;
 }
+
+.link {
+  color: #FE5F1E;
+}
