@@ -4,7 +4,8 @@ const cartController=require('../app/http/controllers/customers/cartController')
 
 
 //Middlewares
-const guest=require('../app/http/middlewares/guest')
+const guest=require('../app/http/middlewares/guest');
+const orderController = require('../app/http/controllers/customers/orderController');
 
 function initRoutes(app){
     
@@ -20,8 +21,10 @@ function initRoutes(app){
     app.get('/cart',cartController().index)
     app.post('/update-cart',cartController().update)
 
-    app.post('/orders',)
-
+    //customer routes
+    app.post('/orders',orderController().store)
+    app.get('/customer/orders',orderController().index)
+  
 
 
  }
