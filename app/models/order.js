@@ -5,7 +5,7 @@ const Schema=mongoose.Schema;
 const orderSchema=new Schema({
     customerId:{
         type:mongoose.Schema.Types.ObjectId ,   //here we are making relation with user collection 
-         ref:'User',
+         ref:'user',
          required:true
     } , 
     items:{type:Object, required:true},
