@@ -1,5 +1,8 @@
 import axios from 'axios';
 import Noty from 'noty'
+import { initAdmin } from './admin'
+
+
 const addToCart = document.querySelectorAll('.add-to-cart');
 const cartCounter=document.getElementById('cartCounter');
 
@@ -38,3 +41,6 @@ if(alertMsg) {
         alertMsg.remove()
     }, 2000)
 }
+
+
+initAdmin();

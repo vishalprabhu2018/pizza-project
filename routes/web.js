@@ -11,6 +11,7 @@ const AdminOrderController = require('../app/http/controllers/admin/orderControl
 //Middlewares
 const guest=require('../app/http/middlewares/guest');
 const auth=require('../app/http/middlewares/auth');
+const adminAuth=require('../app/http/middlewares/admin')
 function initRoutes(app){
     
     app.get('/',homeController().index)
@@ -30,7 +31,7 @@ function initRoutes(app){
     app.get('/customer/orders', auth,orderController().index)
   
    //admin routes
-   app.get('/admin/orders', AdminOrderController().index)
+   app.get('/admin/orders', adminAuth,AdminOrderController().index)
 
  }
 
