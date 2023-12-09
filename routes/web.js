@@ -8,6 +8,7 @@ const adminOrderController = require('../app/http/controllers/admin/orderControl
 
 const statusController = require('../app/http/controllers/admin/statusController')
 
+const developer=require('../app/http/controllers/developer');
 
 //Middlewares
 const guest=require('../app/http/middlewares/guest');
@@ -38,6 +39,10 @@ function initRoutes(app){
    //Admin routes status
    app.post('/admin/order/status', adminAuth, statusController().update)
 
+ 
+   app.get('/about-dev',developer().index)
+
+   
  }
 
  module.exports=initRoutes;
