@@ -1,5 +1,6 @@
 const Order=require('../../../models/order')
 const moment=require('moment');
+const { findById } = require('../../../models/user');
 
 
 function orderController(){
@@ -35,7 +36,16 @@ function orderController(){
             const orders=await Order.find({customerId:req.user._id},null,{sort:{createdAt:-1}})  //descending sorting
             res.render('customers/orders',{orders, moment})
             
+        },
+        async show(req,res){
+            const order=await Order.findById(req.params.id);
+            if(req.user._id.toString() === order.customerId.toString()) {
+                return res.render('customers/singleOrder', { order })
+            }
+            return  res.redirect('/')
+        
         }
+
     }
 }
 
