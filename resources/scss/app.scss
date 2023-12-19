@@ -9,6 +9,10 @@ body{
     // height:4000px;  
 }
 
+.primary{
+    color: $primary;
+}
+
 nav li:last-child a{
     background:$primary;
 
@@ -195,4 +199,14 @@ section.status {
     float: right;
     font-size: 14px;
     margin-top: 8px;
+}
+
+
+
+.footer{
+    background: $dark !important;
+    color:$gray  !important;
+    
+
+
 }

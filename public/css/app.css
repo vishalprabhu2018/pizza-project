@@ -244,6 +244,10 @@ body {
   color: #232323;
 }
 
+.primary {
+  color: #FE5F1E;
+}
+
 nav li:last-child a {
   background: #FE5F1E;
 }
@@ -421,4 +425,9 @@ section.status {
   float: right;
   font-size: 14px;
   margin-top: 8px;
+}
+
+.footer {
+  background: #232323 !important;
+  color: #ccc !important;
 }
