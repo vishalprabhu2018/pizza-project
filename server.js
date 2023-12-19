@@ -14,7 +14,7 @@ const passport = require('passport');
 
 
 
-mongoose.connect('mongodb://localhost:27017/pizzaProject');
+mongoose.connect(process.env.MONGO_CONNECTION_URL);
 const connection = mongoose.connection;
 connection.once('open', () => {
     console.log('Database connected...');
@@ -72,6 +72,11 @@ app.set('view engine','ejs');
 
 
 require('./routes/web')(app)  //called the function with parameter 
+
+app.set('404 ',false);
+app.use((req,res)=>{
+res.status(400).render('404',{layout:'404'})
+})
 
 
 const server=app.listen(PORT,()=>{
