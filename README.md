@@ -1,6 +1,6 @@
 
 <h1> Pizza Project </h1>
-<h2>It is a dynamic web app which is used to order the pizza. With the help of this user can easily order the pizza and track their order which they had made. I also has a admin panel where admin can see the order and set the status of the order</h2>
+<h2>It is a full-stack dynamic web app that is used to order pizza. With the help of this users can easily order the pizza and track the order which they had made. I also have an admin panel where the admin can see the order and set the status of the order</h2>
 <h2>TechStack: HTML,CSS,JS, SCSS,EJS,TaiwindCSS, NodeJS, ExpressJS, MongoDB</h2>
 
 Features:  </br>
