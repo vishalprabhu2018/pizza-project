@@ -1,11 +1,14 @@
 
 <h1> Pizza Project </h1>
 <h2>It is a full-stack dynamic web app that is used to order pizza. With the help of this users can easily order the pizza and track the order which they had made. I also have an admin panel where the admin can see the order and set the status of the order</h2>
-<h2>TechStack: HTML,CSS,JS, SCSS,EJS,TaiwindCSS, NodeJS, ExpressJS, MongoDB</h2>
+<h2>TechStack: HTML,CSS,JS, SCSS,EJS,TaiwindCSS, NodeJS, ExpressJS, MongoDB</h2>  <br>
 
-Features:  </br>
-Login/Register   </br>
-Order the Pizza </br>
+<h4>For hosting I had used technologies like Amazon ec2, ngnix, pm2, ubuntu, certbot</h4>  <be>
+Domain Name: BigRock <be><br>
+
+<h2>Features: </h2> 
+Login/Register   <br>
+Order the Pizza <br>
 Cart Page </br>
 Order Tracking </br>
 Admin Panel where admin can track orders and update the status. </br>
