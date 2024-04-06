@@ -14,6 +14,17 @@ Order Tracking </br>
 Admin Panel where admin can track orders and update the status. </br>
 
 
+<h1>Project Video</h1>
+
+
+
+https://github.com/vishalprabhu2018/pizza-project/assets/46224719/6c700c4a-05c3-4646-b0cc-7f3dafe2873a
+
+
+
+
+
+
 
 <h1>HomePage</h1>
 <img width="917" alt="image" src="https://github.com/vishalprabhu2018/pizza-project/assets/46224719/3cabe8e3-7bf9-4475-88da-68919670551f">
